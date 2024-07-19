@@ -1,0 +1,36 @@
+.story{
+    width: 100%;
+    height: 96px;
+    /* box-shadow:var(--box-shadow); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    position: relative;
+    top: 15px;  
+}
+.story div{
+    width: 130px;
+    height: 85px;
+    display: inline-block;
+    /* background-colo/r: blueviolet; */
+}
+.story div img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.story div h5{
+    font-family: var(--font-family);
+    font-size: 10px;
+    font-weight: 400;
+      cursor: pointer;
+}
+.story div div{
+    width: 50px;
+    height: 50px;
+    background-color: #e3e3e3;;
+    border-radius: 50%;
+}
+

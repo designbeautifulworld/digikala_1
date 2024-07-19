@@ -1,0 +1,131 @@
+.mostSell {
+  width: 100%;
+  height: 403px;
+  /* background-color: blanchedalmond; */
+  display: block;
+}
+.mostSell .moreSell {
+  width: 1336px;
+  height: 402px;
+  /* background-color: turquoise; */
+  padding: 10px;
+  display: block;
+}
+.mostSell .moreSell .mostkala {
+  width: 1330px;
+  height: 395px;
+  /* background-color: red; */
+  padding: 16px 0;
+  border: 1px solid lightgray;
+  border-radius: 20px;
+}
+/* start matn */
+.mostSell .moreSell .mostkala .mostertext {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.mostSell .moreSell .mostkala .mostertext h5 {
+  width: 300px;
+  font-family: var(--font-family);
+  font-size: 20px;
+  font-weight: 800;
+}
+.mostSell .moreSell .mostkala .mostertext h5 svg {
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  line-height: 40px;
+  margin: 0 5px;
+}
+.mostSell .moreSell .mostkala .mostertext h4 {
+  width: 100px;
+  font-size: 14px;
+  position: absolute;
+  left: 40px;
+  font-family: var(--font-family);
+  color: #19bfd3;
+}
+/* end matn */
+.mostSell .moreSell .mostkala .swiper {
+  width: 100%;
+  height: 290px;
+}
+
+.mostSell .moreSell .mostkala .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* background: #fff; */
+  /* height: calc((100% - 30px) / 2) !important; */
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mostSell .moreSell .mostkala .swiper-slide .imageMost {
+  width: 315px;
+  height: 86px;
+  /* background-color: rgb(198, 146, 94); */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  cursor: pointer;
+}
+.mostSell .moreSell .mostkala .swiper-slide .imageMost a {
+  width: 75px;
+  height: 75px;
+  display: block;
+  margin-left: 12px;
+}
+.mostSell .moreSell .mostkala .swiper-slide .imageMost a img {
+  width: 70px;
+  height: 70px;
+}
+.mostSell .moreSell .mostkala .swiper-slide .imageMost span{
+    width: 15px;
+    height: 86px;
+    display: block;
+    /* background-color: #627476; */
+    margin-left: 12px;
+    font-size: 26px;
+    font-weight: 800;
+    font-family: var(--font-family);
+    color: #19bfd3;
+    line-height: 86px;
+}
+.mostSell .moreSell .mostkala .swiper-slide .imageMost h5{
+    width: 197px;
+    height: 86px;
+    color: #3f4064;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 24px;
+   /* margin-top: 30px; */
+   text-align: start;
+   margin: 0px 20px;
+   padding: 20px 0;
+    border-bottom: 1px solid rgb(240, 240, 240);
+}
+.mostSell .moreSell .swiper-button-next{
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 2px 2px 2px lightgray;
+}
+.mostSell .moreSell .swiper-button-prv{
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 2px 2px 2px lightgray;
+}
+.mostSell .moreSell .swiper-button-disabled{
+  opacity: 0;
+}

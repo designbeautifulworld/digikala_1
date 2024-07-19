@@ -1,0 +1,197 @@
+.amazingSlide {
+  width: 100%;
+  height: 330px;
+  padding: 20px;
+}
+.amazingSlide .amazoon {
+  width: 100%;
+  height: 300px;
+  padding: 10px;
+}
+
+.amazingSlide .amazoon .swiper {
+  width: 100%;
+  height: 100%;
+  background-color: #ef4056;
+  padding: 20px 0px;
+  border-radius: 20px;
+  border-radius: 30px;
+  border-left: 2px solid #ef4056;
+    border-right: 2px solid #ef4056;
+}
+
+.amazingSlide .amazoon .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.amazingSlide .amazoon .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+.amazingSlide .amazoon .swiper-button-next{
+  width: 50px !important;
+  height: 50px !important;
+  background-color: #f6f6f6;
+    margin-top: 0;
+    background-color: #ffffff;
+  box-shadow: 1px 1px 1px lightgrey;
+  border-radius: 50%;
+}
+.amazingSlide .amazoon .swiper-button-prev{
+  width: 50px !important;
+  height: 50px !important;
+  background-color: #f6f6f6;
+    margin-top: 0;
+    background-color: #ffffff;
+  box-shadow: 1px 1px 1px lightgrey;
+  border-radius: 50%;
+}
+.amazingSlide .amazoon .swiper-button-disabled {
+  opacity: 0;
+}
+.amazingSlide .amazoon .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{
+  font-size: 12px !important;
+}
+.amazingSlide_Item {
+  flex-flow: column wrap;
+}
+.amazingSlide .amazoon .image {
+  text-align: center;
+  margin-bottom: 0px;
+}
+.amazingSlide .amazoon .image > img {
+  width: 100%;
+  height: 150px;
+  display: inline-block;
+}
+.amazingSlide .amazoon .price {
+  width: 100%;
+  direction: ltr;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  text-align: center;
+}
+.amazingSlide .amazoon .price > h4 {
+  width: 45%;
+  display: inline-block;
+  font-size: 18px;
+  font-family: var(--font-family);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  direction: rtl;
+  color: #3f4064;
+}
+.amazingSlide .amazoon .price > h4 > span {
+  font-size: 10px;
+  font-weight: bold;
+  font-family: var(--font-family);
+  padding: 2px;
+  color: #3f4064;
+}
+.amazingSlide .amazoon .price > h5 {
+  width: 34px;
+  height: 20px;
+  display: inline-block;
+  font-weight: bold;
+  background-color: #d32f2f;
+  line-height: 20px;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 12px;
+  font-family: var(--font-family);
+}
+.amazingSlide .amazoon .discount {
+  width: 100%;
+  font-size: 14px;
+  text-align: left;
+  padding-left: 40px;
+  position: absolute;
+  bottom: 10px;
+  color: #c0c2c5;
+  text-decoration: line-through;
+  font-family: var(--font-family);
+}
+.amazingSlide .amazoon .amazingSlide_Item_1 {
+  flex-flow: column wrap;
+  background-color: #ef4056;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.amazingSlide .amazoon .avalImage {
+  background-color: #ef4056;
+  width: 92px;
+  height: 77px;
+  display: block;
+}
+.amazingSlide .amazoon .avalImage > img {
+  width: 92px;
+  height: 77px;
+  object-fit: contain;
+}
+.amazingSlide .amazoon .avalImage_1 {
+  width: 145px;
+  height: 115px;
+  margin-top: 8px;
+  display: block;
+  direction: rtl;
+  padding-bottom: 40px;
+}
+.amazingSlide .amazoon .avalImage_1 > img {
+  width: 140px;
+  height: 110px;
+  object-fit: cover;
+  padding: 10px;
+}
+.amazingSlide .amazoon .avalImage_1 > p {
+  width: 100%;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #fff;
+  margin-top: 4px;
+  font-family: var(--font-family);
+  direction: rtl;
+}
+.amazingSlide .amazoon .avalImage_1 > p > svg {
+  width: 22px !important;
+  height: 22px !important;
+  vertical-align: top;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #fff;
+  margin-top: 4px;
+  font-family: var(--font-family);
+  direction: rtl;
+}
+/* ........................ */
+.amazingSlide .amazoon .image_1 {
+  width: 60px;
+  height: 60px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: 1px solid #007aff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.amazingSlide .amazoon .price_1 {
+  font-size: 14px;
+  color: #3f4064;
+  font-family: var(--font-family);
+  font-weight: bold;
+  line-height: 60px;
+}

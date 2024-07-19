@@ -1,0 +1,111 @@
+@import "./setting.css";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.logi {
+  width: 400px;
+  height: 445px;
+  padding: 20px;
+  border: 1px solid lightgrey;
+  margin: 95px auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 0px rgb(158, 158, 158);
+}
+
+.logi .logo {
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.logi .logo svg {
+  margin-top: 25px;
+  transform: scale(1.5, 1.5);
+}
+.logi .content {
+  width: inherit;
+  padding: 30px 10px;
+  /* background-color: blue; */
+}
+.logi .content .log {
+  font-size: 22px;
+  font-weight: 600;
+  font-family: var(--font-family);
+}
+.logi .hi {
+  width: 100%;
+  height: 60px;
+  /* background-color: aqua; */
+  display: block;
+  line-height: 30px;
+}
+.logi .hi h4 {
+  font-size: 14px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  color: #3f4064;
+}
+.logi .in_box {
+  width: 100%;
+}
+.logi .in_box form {
+  width: 100%;
+  height: 160px;
+  /* background-color: blue; */
+  padding: 0 5px;
+  line-height: 30px;
+}
+.logi .in_box form input[type="text"] {
+  width: 100%;
+  height: 60px;
+  /* background-color: bisque; */
+  border-radius: 10px;
+  caret-color: #19bfd3;
+  color: #19bfd3;
+  outline: unset;
+  /* outline-color: #ef4056; */
+  padding: 0 10px;
+  border: 1px solid #19bfd3;
+}
+
+.logi .in_box form p{
+  width: 100%;
+  height: 40px;
+  /* background-color: yellow; */
+  font-size: 14px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  color: #b2001a;
+  padding: 0 10px;
+  display: block;
+}
+.logi .in_box form input[type="text"]:focus{
+   border: 1px solid #b2001a;
+    caret-color: #b2001a;
+}
+.logi .in_box form input[type="button"]{
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  border: unset;
+  background-color: #ef4056;
+  color: #FFF;
+  font-size: 18px;
+  font-family: var(--font-family);
+  font-weight: bold;
+  text-align: center;
+}
+.logi .in_box h6{
+  
+}
+
+/* برای ریسپانسیو به این شکل است
+.logi .in_box form input[type="text"]:focus {
+  border: none;
+  caret-color: #ef4056;
+  border-bottom:2px solid #ef4056;
+  background-color: #f0f0f1;
+  padding :20px 8px;
+} */

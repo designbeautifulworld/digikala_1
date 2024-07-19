@@ -1,0 +1,27 @@
+.haraj_1{
+    width: 100%;
+    height: 290px;
+    /* background-color: aqua; */
+   /* box-shadow: var(--box-shadow); */
+}
+.haraj_1 picture{
+    width: 100%;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20;
+  
+}
+.haraj_1 picture a{
+ width: 100%;
+    height: 260px;
+}
+.haraj_1 picture a img{
+    display: inline-block;
+    width: 650px;
+    height: 264px;
+    border-radius: 20px;
+    margin: 0 10px;
+
+}

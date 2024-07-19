@@ -1,0 +1,103 @@
+.bestBrand{
+    width: 1330px;
+    height: 206px;
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 16px;
+  margin: 0 10px;
+
+}
+.bestBrand .behtarin{
+    width: 1330px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    font-family: var(--font-family);
+    text-align: center;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 45px;
+    /* background-color: aqua; */
+}
+.bestBrand .behtarin .setare{
+    margin-left: 8px;
+    line-height: 24px;
+    display: block;
+    margin-top: 10px; 
+    /* background-color: #0c0c0c; */
+}
+.bestBrand .behtarin .setare h3{
+    width: 800px;
+    height: 44px;
+  color: #0c0c0c;
+  display: block;
+}
+.bestBrand .branding{
+width: 1330px;
+height: 100px;
+background-color: rgb(244, 244, 243);
+/* background-color: bisque; */
+}
+/* swiper */
+ .bestBrand .branding .swiper {
+      width: 100%;
+      height: 100%;
+      /* background-color: rgb(211, 211, 209); */
+    }
+
+   .bestBrand .branding .swiper-slide {
+    width: 143px;
+    height: 118px;
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* background-color: tomato; */
+      /* padding: 20px; */
+    }
+.bestBrand .branding .swiper-slide a{
+     width: 110px;
+      height: 110px;
+      /* padding: 10px; */
+     text-align: center;
+     
+}
+   .bestBrand .branding .swiper-slide a img {
+      display: block;
+      width: 90px;
+      height: 90px;
+      object-fit: contain;
+    }
+   .bestBrand .branding .swiper-button-next, .swiper-rtl .swiper-button-prev{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px lightgray;
+    margin-top: -30px;
+
+   }
+   .bestBrand .branding .swiper-button-next:after, .swiper-button-prev:after{
+    font-size: 14px !important;
+    color: rgb(86, 86, 86) !important;
+
+   }
+    .bestBrand .branding .swiper-button-disabled{
+opacity: 0;
+
+   }
+    .bestBrand .branding .swiper-button-next{
+    width: 50px !important;
+    height: 50px !important;
+    background-color: rgb(255, 255, 255) !important;
+    border-radius: 50% !important;
+    box-shadow: 1px 1px 1px lightgray !important;
+   
+    }
+     .bestBrand .branding .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{
+            font-size: 14px !important;
+    color: rgb(86, 86, 86) !important;
+     }

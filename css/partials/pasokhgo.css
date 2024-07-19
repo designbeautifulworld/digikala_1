@@ -1,0 +1,23 @@
+.pasokhgo {
+  width: 40px;
+  height: 40px;
+  background-color: #ef4056;
+  border-radius: 50%;
+  position: fixed;
+  right: 50px;
+  bottom: 10px;
+  z-index: 1;
+}
+.pasokhgo .formo {
+  width: 24px;
+  height: 24px;
+}
+.pasokhgo .formo a {
+  text-decoration: none;
+}
+.pasokhgo .formo a svg {
+  background-color: #ef4056;
+  color: #fff;
+  margin-right: 8px;
+  margin-top: 8px;
+}

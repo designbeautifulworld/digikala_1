@@ -1,0 +1,118 @@
+.selectproduct {
+  width: 100%;
+  height: 813px;
+}
+.selectproduct .selectproductsell{
+    width: 1324px;
+    height: 812px;
+    margin: 10px;
+    border:1px solid lightgray;
+    border-radius: 18px;
+}
+.selectproduct .selectproductsell .matnselect{
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin:0 10px
+}
+.selectproduct .selectproductsell .matnselect h3{
+  font-size: 20px;
+  font-weight: 700;
+  font-family: var(--font-family);
+  text-align: center;
+}
+.selectproduct .selectproductsell .matnselect h3 svg{
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+.selectproduct .selectproductsell .selectKala {
+  width: 1322px;
+  height: 755px;
+  /* background-color: thistle; */
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 0fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  /* border: 5px solid rgb(255, 136, 0); */
+  margin-top: 10px;
+}
+
+.selectproduct .selectproductsell .selectKala .selectkala_kala_1{
+    width: 100%;
+    height: 242px;
+    /* background-color: rgb(64, 80, 224); */
+}
+.selectproduct .selectproductsell .selectKala .selectkala_kala_1 a{
+  width: 201px;
+  height: 217px;
+  padding: 12px 8px;
+  border: 0 0 1px 1px;
+  border-color: lightgray;
+flex-flow: column wrap;
+/* background-color: rgb(33, 240, 36); */
+text-decoration: none;
+}
+.selectproduct .selectproductsell .selectKala .selectkala_kala_1 a img{
+  width: 150px;
+  height: 150px;
+  display: block;
+  /* background-color: rgb(227, 12, 205); */
+ margin: 0 30px;
+}
+.selectproduct .selectproductsell .selectKala .selectkala_kala_1 a .img{
+width: 100%;
+height: 40px;
+/* background-color: violet; */
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.selectproduct .selectproductsell .selectKala .selectkala_kala_1 a .img h4{
+  width: 40px;
+  height: 20px;
+  font-family: var(--font-family);
+  font-size: 12px;
+  font-weight: 400;
+  color: #fff;
+  background-color: #d32f2f;
+  border-radius: 8px;
+    margin-right: 10px;
+    margin-top: 5px;
+    padding: 0 5px;
+}
+.selectproduct .selectproductsell .selectKala .selectkala_kala_1 a .img h3{
+  width: 100%;
+  height: 30px;
+  /* background-color: black; */
+  font-family: var(--font-family);
+  font-size: 18px;
+  font-weight: 700;
+  color: #3f4064;
+  text-align: left;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+.selectproduct .selectproductsell .selectKala .selectkala_kala_1 a .img h3 span{
+  font-family: var(--font-family);
+  font-size: 10px;
+  color: #3f4064;
+  margin-right: 5px;
+  margin-left: 8px;
+}
+.selectproduct .selectproductsell .selectKala .selectkala_kala_1 a .tik h6{
+  height: 20px;
+  /* background-color: #d32f2f; */
+  font-family: var(--font-family);
+  font-size: 10px;
+  text-align: left;
+  color: #c0c2c5;
+text-decoration-line: line-through;
+margin-left: 50px;
+}
+

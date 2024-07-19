@@ -1,0 +1,587 @@
+/*............................... start header .......................*/
+header {
+  width: 100%;
+  height: 170px;
+  background-color: #ffffff;
+  box-shadow: var(--box-shadow); 
+}
+/* .......................................عکس ابتدای صفحه ...........................*/
+header .top {
+  width: 100%;
+  height: 60px;
+    z-index: 1000;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+header .top > img {
+  width: 100%;
+  height: inherit;
+  /* object-fit: cover; */
+}
+/*......................................... لوگو و سرچ و ثبت نام .......................*/
+header .bottom {
+  width: inherit;
+  height: calc(var(--header) - 60px);
+}
+header .bottom .bottom_top {
+  width: inherit;
+  height: calc(var(--header) - 100px);
+    /*60pxbottom-40pxbottom_bottom*/
+      z-index: 1000;
+  position: fixed;
+  top: 60px;
+  background-color: #fff;
+}
+/* ................................................لوگو .......................*/
+header .bottom .bottom_top .logo {
+  width: 10%;
+  height: inherit;
+  display: inline-block;
+  margin-right: -3px;
+  vertical-align: top;
+  text-align: center;
+}
+header .bottom .bottom_top .logo svg {
+  margin-top: 20px;
+}
+/* سرچ */
+header .bottom .bottom_top .search {
+  width: 70%;
+  height: inherit;
+  /* background-color: goldenrod; */
+  display: inline-block;
+  margin-right: -3px;
+  vertical-align: top;
+  padding-right: 30px;
+}
+header .bottom .bottom_top .search input[type="text"] {
+  width: 600px;
+  height: 40px;
+  margin-top: 15px;
+  background-color: #f0f0f1;
+  border: unset;
+  outline: unset;
+  border-radius: 8px;
+  padding-right: 20px;
+  font-family: var(--font-family);
+  font-size: 13px;
+  color: #81858b;
+  transition: 300ms;
+}
+header .bottom .bottom_top .search input[type="text"]::placeholder {
+  font-size: 12px;
+  color: #9a9a9a;
+}
+header .bottom .bottom_top .search input[type="text"]:focus {
+  color: #c1c1c1;
+  background-color: white;
+  box-shadow: 0px 0px 2px rgb(158, 158, 158);
+}
+/* ...........................................ثبت نام .....................*/
+header .bottom .bottom_top .login {
+  width: 10%;
+  height: inherit;
+  display: inline-block;
+  margin-right: -3px;
+  vertical-align: top;
+}
+header .bottom .bottom_top .login a {
+  display: block;
+  width: 135px;
+  height: 40px;
+  background-color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: var(--font-family);
+  line-height: 40px;
+  color: #2b2b2b;
+  margin: 0 auto;
+  text-decoration: none;
+  margin: 15px;
+  border: 1px solid rgb(209, 208, 208);
+  border-radius: 5px;
+}
+header .bottom .bottom_top .login a svg {
+  vertical-align: middle;
+  margin: 5px auto;
+  padding: 0 3px;
+}
+/* ...........................................سبد خرید ...............*/
+header .bottom .bottom_top .login_1 {
+  width: 5%;
+  height: inherit;
+  display: inline-block;
+  margin-right: 22px;
+  vertical-align: top;
+}
+
+header .bottom .bottom_top .login_1 a {
+  display: block;
+  width: 60px;
+  height: 20px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: var(--font-family);
+  line-height: 40px;
+  color: #2b2b2b;
+  margin: 25px auto;
+  text-decoration: none;
+  border-right: 1px solid #e0e0e2;
+}
+header .bottom .bottom_top .login_1 a svg {
+  vertical-align: middle;
+  margin-top: -17px;
+}
+/*  ................................................منو ................*/
+header .bottom .bottom_bottom {
+  width: 100%;
+  height: 40px;
+ position: relative;
+ top: 130px;
+ display: block;
+}
+header .bottom .bottom_bottom nav {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  margin-right: -3px;
+  vertical-align: top;
+  z-index: 1;
+}
+header .bottom .bottom_bottom nav ul {
+  /* display: inline-block; */
+  width: 80%;
+  height: inherit;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  /* padding-right: 20px; */
+  list-style: none;
+  /* background-color: yellow; */
+  margin-right: -3px;
+  vertical-align: top;
+  flex-flow: row wrap;
+}
+header .bottom .bottom_bottom nav ul li {
+  display: block;
+  width:128px;
+  height: inherit;
+  padding-right: 5px;
+  z-index: 2;
+}
+
+header .bottom .bottom_bottom nav ul li a {
+  display: block;
+  width: auto;
+  height: inherit;
+  padding: 0 10px;
+  font-family: var(--font-family);
+  line-height: 40px;
+  text-decoration: none;
+  font-size: 12px;
+  color: #62666d;
+  /* .................................... به خاطر تغییراتی در اولی جدا کلاس دادم  .............*/
+  &.tit {
+    color: #50516c;
+    font-weight: bold;
+  }
+  &.tit_1 {
+    border-right: 1px solid #a0a1a2;
+    height: 20px;
+    padding-right: 12px;
+    line-height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+}
+/*..................................... برای ایکون های کنار منو ......................*/
+header .bottom .bottom_bottom nav ul li a svg {
+  font-weight: 700;
+  line-height: 30.1px;
+  font-size: 14px;
+  vertical-align: middle;
+  margin-left: 3px;
+}
+/* .........................................زیرمنو .........................*/
+.submenu {
+  width: 60vw;
+  height: 50vh;
+  /* background-color: #2b2b2b; */
+  position: absolute;
+  right: 20px;
+  display:block;
+  margin: 0;
+  padding: 0;
+  background-color: #FFFFFF;
+}
+.menu nav ul li:hover .submenu {
+  display: block;
+}
+.submenu .sub2menu {
+  width: 23.5%;
+  height: 100%;
+  background-color: #f0f0f1;
+  overflow: auto;
+  direction: ltr;
+  display: block;
+  /* padding: 0 10px; */
+
+}
+.submenu .sub2menu ul {
+  width: 100%;
+  list-style: none;
+  /* background-color: #ff0004; */
+  display: block;
+  direction: rtl;
+    margin-right: 0 !important;
+}
+.submenu .sub2menu ul li {
+  width: 250px !important;
+  height: 40px !important;
+  /* background-color: blue; */
+  /* padding-right: 0px !important; */
+  display: block;
+  padding-right: 0 !important;
+  /* margin-right: 0 !important; */
+}
+.submenu .sub2menu ul li a {
+  display: block;
+  width: 230px !important;
+  height: inherit;
+  /* text-align: center; */
+  text-decoration: none;
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  transition: 300ms;
+}
+.submenu .sub2menu ul li:hover a {
+  background-color: #fff;
+  color: #ef4056;
+}
+.submenu .sub2menu ul li:hover a svg{
+background-color: #fff;
+  fill: #ef4056 !important;
+}
+::-webkit-scrollbar {
+  width: 15px;
+  background-color: #f0f0f1;
+}
+::-webkit-scrollbar-button {
+  width: 15px;
+  background-color: #dadbdc;
+}
+::-webkit-scrollbar-thumb {
+  width: 15px;
+  background-color: #c0c2c5;
+}
+/* .....................................پایان زیرزیرمنو ...............................*/
+/*........................................ زیرمنوی زیرمنو ........................*/
+.submenu .sub2menu .sub3menu{
+  width: 75.5%;
+  height:100%;
+  /* background-color: rgb(255, 0, 242); */
+  position: absolute;
+  right:0px;
+  top: 0;
+  display: none;
+  margin-right: 195px;
+  padding:20px;
+  padding-bottom: 0;
+   overflow: auto;
+   direction: ltr;
+}
+.submenu .sub2menu ul li:hover .sub3menu{
+  display: block;
+}
+.submenu .sub2menu .sub3menu .all{
+width: auto;
+height: 10%;
+direction: rtl;
+}
+.submenu .sub2menu .sub3menu .all a{
+  width: auto;
+  height: 100%;
+  color:#19bfd3;
+  font-family: var(--font-family);
+  font-size: 12px;
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 27px;
+ 
+}
+.submenu .sub2menu .sub3menu .all a svg{
+  margin-right: 5px;
+  vertical-align: middle;
+  fill: #19bfd3 !important;
+}
+.submenu .sub2menu .sub3menu:hover .all a svg{
+  fill:#19bfd3 !important;
+}
+.submenu .sub2menu .sub3menu .stons{
+width:auto;
+height: 90%;
+/* background-color: rgb(44, 243, 243); */
+display: flex;
+flex-flow: row wrap;
+direction: rtl;
+}
+.submenu .sub2menu .sub3menu .ston{
+  width: 180px;
+  height:150px;
+  /* background-color: steelblue; */
+  font-size: 14px;
+  color: #2b2b2b;
+  font-family: var(--font-family);
+  font-weight: 700;
+  display: block;
+}
+.submenu .sub2menu .sub3menu .ston a{
+  display: block;
+    width: 185px;
+  height: 45px;
+  /* background-color: rgb(25, 221, 201); */
+  color: #81858b;
+font-family: var(--font-family);
+font-size: 14px;
+font-weight: 400;
+text-decoration: none;
+}
+.submenu .sub2menu .sub3menu .ston a span{
+  color:  #ef4056;
+  font-size: 16px;
+  font-weight:bolder;
+  margin-left: 5px;
+  vertical-align: top;
+}
+.submenu .sub2menu .sub3menu .ston a svg{
+    fill: #81858b !important;
+    vertical-align: middle ;
+    margin-right: 5px;
+}
+.submenu .sub2menu .sub3menu .ston:hover a{
+  color: #ef4056;
+}
+.submenu .sub2menu .sub3menu .ston:hover a svg{
+  fill: #ef4056 !important;
+}
+
+/* ...................................پایان زیرمنوی زیرمنو ..........................*/
+
+/* ......................................شهر خود را انتخاب کنید ......................*/
+header .bottom .bottom_bottom nav .city {
+  display: block;
+  width: auto;
+  height: inherit;
+  padding: 0 10px;
+  font-family: var(--font-family);
+  line-height: 40px;
+  text-decoration: none;
+  font-size: 12px;
+  color: #3f4064;
+}
+header .bottom .bottom_bottom nav .city svg {
+  font-weight: 700;
+  line-height: 30.1px;
+  font-size: 14px;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+/*...................................... start hammenu..................................... */
+.ham_menu {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  bottom:0;
+  right:0;
+  left: 0;
+  box-shadow: 1px 1px 10px rgb(0, 0, 0);
+  /* margin: 0 5px; */
+  z-index: 1000;
+  display:block;
+  background-color: #fff;
+
+}
+.ham_menu .ham_menu_icon {
+  width: inherit;
+  height: inherit;
+  /* background-color: antiquewhite; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* direction: rtl; */
+  text-align: center;
+   padding: 0px 5px;
+  margin-top: 2px;
+}
+.ham_menu .ham_menu_icon .home {
+  width: 25%;
+  height: inherit;
+  /* background-color: blueviolet; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* line-height: 0px; */
+  flex-direction: column;
+}
+.ham_menu .ham_menu_icon .home a{
+    width: inherit;
+    height: inherit;
+    display: block; 
+    text-decoration: none;
+    color: #a1a3a8; 
+    margin: 10px 0;
+    fill:#a1a3a8;
+}
+.ham_menu .ham_menu_icon .home a:focus {
+    color: #424750;
+    
+   
+}
+.ham_menu .ham_menu_icon .home a:focus svg{
+ fill: #424750 !important;
+}
+.ham_menu .ham_menu_icon .home h3{
+    font-family: var(--font-family);
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 5px;
+
+}
+/* ....... */
+.ham_menu .ham_menu_icon .category {
+  width: 25%;
+  height: inherit;
+  /* background-color: blueviolet; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* line-height: 1px; */
+  flex-direction: column;
+}
+.ham_menu .ham_menu_icon .category a{
+    width: inherit;
+    height: inherit;
+    display: block; 
+    text-decoration: none;
+    color: #a1a3a8; 
+    margin: 10px 0;
+    fill:#a1a3a8;
+}
+.ham_menu .ham_menu_icon .category a:focus {
+    color: #424750;
+   
+}
+.ham_menu .ham_menu_icon .category a:focus svg{
+ fill: #424750 !important;
+}
+.ham_menu .ham_menu_icon .category h3{
+    font-family: var(--font-family);
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 5px;
+
+}
+/* ...... */
+.ham_menu .ham_menu_icon .buy_bag {
+  width: 25%;
+  height: inherit;
+  /* background-color: blueviolet; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* line-height: 1px; */
+  flex-direction: column;
+}
+.ham_menu .ham_menu_icon .buy_bag a{
+    width: inherit;
+    height: inherit;
+    display: block; 
+    text-decoration: none;
+    color: #a1a3a8; 
+    margin: 10px 0;
+    fill:#a1a3a8;
+}
+.ham_menu .ham_menu_icon .buy_bag a:focus {
+    color: #424750;
+   
+}
+.ham_menu .ham_menu_icon .buy_bag a:focus svg{
+ fill: #424750 !important;
+}
+.ham_menu .ham_menu_icon .buy_bag h3{
+    font-family: var(--font-family);
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 5px;
+
+}
+/* ...... */
+.ham_menu .ham_menu_icon .digikala {
+  width: 25%;
+  height: inherit;
+  /* background-color: blueviolet; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* line-height: 1px; */
+  flex-direction: column;
+}
+.ham_menu .ham_menu_icon .digikala a{
+    width: inherit;
+    height: inherit;
+    display: block; 
+    text-decoration: none;
+    color: #a1a3a8; 
+    margin: 10px 0;
+    fill:#a1a3a8;
+}
+.ham_menu .ham_menu_icon .digikala a:focus {
+    color: #424750;
+   
+}
+.ham_menu .ham_menu_icon .digikala a:focus svg{
+ fill: #424750 !important;
+}
+.ham_menu .ham_menu_icon .digikala h3{
+    font-family: var(--font-family);
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.ham_menu {
+  display: none;
+}
+
+/*................................................. end hammenu.......................... */
+/* respansive project */
+@media (max-width:1000px) {
+  header .top{
+    position: absolute;
+  }
+  header .bottom{
+    width: 100%;
+    height: 40px !important;
+ position: fixed;
+  top: 0px !important;
+  right: 0;
+  bottom: 0;
+  background-color: #fff !important;
+  z-index: 3;
+  }
+ .ham_menu {
+  display: block;
+ }
+ header .bottom .bottom_bottom{
+  display: none;
+ }
+      
+}

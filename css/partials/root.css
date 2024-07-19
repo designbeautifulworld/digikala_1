@@ -1,0 +1,25 @@
+@font-face {
+  font-family: dirooz ;
+  src: url('../../font/fa/BYekan.eot');
+  src: url('../../font/fa/BYekan.ttf');
+  src: url('../../font/fa/BYekan.woff');
+  src: url('../../font/fa/BYekan.woff2');
+}
+
+:root{
+    --box-shadow:  0 1px 1px rgb(209, 208, 208);
+    --header:170px;
+    --font-family: dirooz;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: .2s linear;
+}
+html{
+  overflow-x: hidden;
+}
+.wrapper {
+  width: 100%;
+}
